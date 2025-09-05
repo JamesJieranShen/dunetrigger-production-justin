@@ -26,4 +26,5 @@ setup metacat
 setup rucio
 export RUCIO_ACCOUNT=justinreadonly
 setup justin
+alias buildsw='ninja -C ${MRB_BUILDDIR} -k 0 install | grep -v "Up-to-date" '
 
