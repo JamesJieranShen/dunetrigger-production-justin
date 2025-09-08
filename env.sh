@@ -21,6 +21,8 @@ export DUNELAR_VERSION=v10_10_02d00 # you want to update this
 export DUNELAR_QUALIFIER=e26:prof # you want to update this
 
 setup -B dunesw ${DUNELAR_VERSION} -q ${DUNELAR_QUALIFIER}
+source dunesw-*/local*/setup
+mrbslp
 
 setup metacat
 setup rucio

@@ -1,5 +1,5 @@
 DSET="fardet-hd:fardet-hd__trg_mc_2025a__detector-simulated__v10_06_00d01__detsim_dune10kt_1x2x6_notpcsigproc__prodbackground_radiological_decay0_dune10kt_1x2x6_lateralAPA__out1__validation"
-OUTDIR="prodbackground_radiological_decay0_dune10kt_1x2x6_lateralAPA"
+OUTDIR="trigger-prod-validation/prodbackground_radiological_decay0_dune10kt_1x2x6_lateralAPA"
 TARBALL="/exp/dune/app/users/jierans/triggersim/justin/trigger-prod-validation/grid-input.tar"
 FCL_FILE="triggerana_tree_1x2x6_tpg_absrs_st.fcl"
 NUM_EVENTS=10

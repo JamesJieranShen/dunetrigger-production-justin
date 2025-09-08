@@ -55,7 +55,8 @@ setup dunesw "$DUNE_VERSION" -q "$DUNE_QUALIFIER"
 now=$(date -u +"%Y-%m-%dT_%H%M%SZ")
 Ffname=`echo $pfn | awk -F/ '{print $NF}'`
 fname=`echo $Ffname | awk -F. '{print $1}'`
-outFile=${fname}_triggerAna_${now}.root
+# outFile=${fname}_triggerAna_${now}.root
+outFile=triggerAna_${now}.ntuple.root
 
 campaign="justIN.w${JUSTIN_WORKFLOW_ID}s${JUSTIN_STAGE_ID}"
 

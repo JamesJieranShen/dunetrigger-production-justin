@@ -21,11 +21,11 @@ mkdir -pv $SCRATCH/$OUTDIR
 
 justin simple-workflow \
 --mql \
-"files from ${DSET} ordered " \
+"files from ${DSET} limit 1000 ordered " \
 --jobscript-git JamesJieranShen/dunetrigger-production-justin/submit_local_code.jobscript:refs/heads/main \
 --env FCL_FILE=${FCL_FILE} \
 --env NUM_EVENTS=${NUM_EVENTS} \
 --env DUNE_VERSION="${DUNE_VERSION}" \
 --env INPUT_TAR_DIR_LOCAL="$INPUT_TAR_DIR_LOCAL" \
 --rss-mb 4000 \
---output-pattern "*_triggerAna_*.root:$FNALURL/$USERF/$OUTDIR" \
+--output-pattern "triggerAna_*.ntuple.root:$FNALURL/$USERF/$OUTDIR" \

@@ -1,2 +1,5 @@
 dunesw-*
 *.tar
+*.db
+*.root
+*.log
